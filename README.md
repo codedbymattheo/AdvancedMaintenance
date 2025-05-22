@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/codedbymattheo/AdvancedMaintenance/actions/workflows/build.yml/badge.svg)](https://github.com/codedbymattheo/AdvancedMaintenance/actions)
 [![License](https://img.shields.io/github/license/codedbymattheo/AdvancedMaintenance)](LICENSE)
 
-**AdvancedMaintenance**[EN] is Spigot plugin, which allows you to lockdown server within maintenance.
+**AdvancedMaintenance** is Spigot plugin, which allows you to lockdown server within maintenance.
 ---
 
 ## 📦 Funkce
