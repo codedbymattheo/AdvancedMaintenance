@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/github/license/codedbymattheo/AdvancedMaintenance)](LICENSE)
 
 **AdvancedMaintenance** is Spigot plugin, which allows you to lockdown server within maintenance.
+
 ---
 
 ## 📦 Funkce
