@@ -40,14 +40,14 @@ public class MaintenanceCommand extends Command {
 
         switch(args[0].toLowerCase()){
             case "on":
-                plugin.setMaintenanceEnabled(true);
+                plugin.setMaintenanceMode(true);
                 p.sendMessage(plugin.getConfigManager().getMessage("maintenance-enabled"));
                 plugin.getSqLiteLogger().logAction(p.getName(), "ENABLED", reason);
                 plugin.getDiscordWebhook().sendEmbed("🔧 Maintenance", p, "Maintenance has been switched on", 53572);
                 return;
 
             case "off":
-                plugin.setMaintenanceEnabled(false);
+                plugin.setMaintenanceMode(false);
                 p.sendMessage(plugin.getConfigManager().getMessage("maintenance-disabled"));
                 plugin.getSqLiteLogger().logAction(p.getName(), "DISABLED", reason);
                 plugin.getDiscordWebhook().sendEmbed("🔧 Maintenance", p,"Maintenance has been switched off", 16711680);

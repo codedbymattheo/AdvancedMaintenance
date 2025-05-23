@@ -19,7 +19,7 @@ public final class Main extends JavaPlugin {
     @Getter
     private static Main instance;
 
-    private boolean maintenanceEnabled = false;
+    private boolean maintenanceEnabled = getConfigManager().getConfig().getBoolean("maintenance");
 
     private ConfigManager configManager;
     private SQLiteLogger sqLiteLogger;
@@ -63,6 +63,12 @@ public final class Main extends JavaPlugin {
 
         EventExecutor eventExecutor = new EventExecutor();
         eventExecutor.autoEventRegister();
+    }
+
+    public void setMaintenanceMode(boolean maintenance){
+        this.maintenanceEnabled = maintenance;
+        getConfigManager().getConfig().set("maintenance", maintenance);
+        saveConfig();
     }
 
 }

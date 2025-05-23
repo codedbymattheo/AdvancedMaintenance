@@ -36,7 +36,7 @@ public class MaintenanceScheduler {
 
         countdownTask = Bukkit.getScheduler().runTaskTimer(plugin, () -> {
            if(secondsLeft == 0){
-               plugin.setMaintenanceEnabled(true);
+               plugin.setMaintenanceMode(true);
                broadcast(plugin.getConfigManager().getMessage("maintenance-schedule-start"));
 
                plugin.getSqLiteLogger().logAction("SYSTEM", "AUTO_ENABLED", reason != null ? reason : "Planned");

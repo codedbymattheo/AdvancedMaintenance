@@ -1,3 +1,5 @@
+maintenance: false
+
 #JSON API
 api:
   enabled: false
