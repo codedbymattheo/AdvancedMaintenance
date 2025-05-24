@@ -1,0 +1,12 @@
+maintenance: false
+
+#JSON API
+api:
+  enabled: false
+  port: 0000
+  json-path: "/status"
+
+#DISCORD WEBHOOK
+discord:
+  enabled: true
+  webhook-url: ""
