@@ -26,3 +26,7 @@ SIMPLE BUT POWERFUL
 5. And you are good to go!
 
 ---
+
+## ❓ Comming Soon...
+
+- GUI management 
