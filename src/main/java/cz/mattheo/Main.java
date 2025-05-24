@@ -1,13 +1,12 @@
 package cz.mattheo;
 
 import cz.mattheo.api.DiscordWebhook;
-import cz.mattheo.api.JSONApiServer;
-import cz.mattheo.api.StatusHandler;
 import cz.mattheo.config.ConfigManager;
 import cz.mattheo.scheduler.MaintenanceScheduler;
 import cz.mattheo.storage.SQLiteLogger;
 import cz.mattheo.utils.CommandExecutor;
 import cz.mattheo.utils.EventExecutor;
+import cz.mattheo.utils.version.VersionChecker;
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -23,10 +22,9 @@ public final class Main extends JavaPlugin {
 
     private ConfigManager configManager;
     private SQLiteLogger sqLiteLogger;
-    private JSONApiServer jsonApiServer;
     private MaintenanceScheduler maintenanceScheduler;
-    private StatusHandler statusHandler;
     private DiscordWebhook discordWebhook;
+    private VersionChecker versionChecker;
 
     @Override
     public void onEnable() {
@@ -40,12 +38,11 @@ public final class Main extends JavaPlugin {
 
         sqLiteLogger = new SQLiteLogger();
 
-        jsonApiServer = new JSONApiServer();
-        jsonApiServer.start();
-
         maintenanceScheduler = new MaintenanceScheduler();
-        statusHandler = new StatusHandler();
         discordWebhook = new DiscordWebhook();
+
+        versionChecker = new VersionChecker();
+        versionChecker.checkForUpdates();
 
         registerUtils();
     }
@@ -54,7 +51,6 @@ public final class Main extends JavaPlugin {
     public void onDisable() {
         getLogger().info("❌ AdvancedMaintenance has been disabled!");
         if(sqLiteLogger != null) sqLiteLogger.close();
-        if(jsonApiServer != null) jsonApiServer.stop();
     }
 
     private void registerUtils(){

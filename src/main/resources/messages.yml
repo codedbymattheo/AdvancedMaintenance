@@ -1,20 +1,22 @@
 maintenance-enabled: "§aÚdržba zapnuta!"
 maintenance-disabled: "§cÚdržba vypnuta!"
+
 maintenance-status-on: "§7ÚDRŽBA je: §aAKTIVNÍ"
 maintenance-status-off: "§7ÚDRŽBA je: §cVYPNUTÝ"
-maintenance-scheduled-canceled: "§7Plánovaná údržba byla §czrušena!"
 
 kick-message: "§cNa serveru probíhá údržba!"
 
-no-permission: "§cNa toto nemáš oprávnění."
-
-maintenance-schedule-start: "§cÚdržba právě začíná!"
+maintenance-scheduled-to: "§aMaintenance will start in %min% minutes"
 maintenance-in: "§cMaintenance in %min% m and %sec% s"
 
-invalid-number-format-scheduler: "§cČas musí být číslo (v minutách)."
-maintenance-scheduled-to: "§aMaintenance will starts in %min% minutes"
-there-is-no-maintenance: "§7Žádná údržba není naplánovaná!"
+maintenance-schedule-start: "§cÚdržba právě začíná!"
+maintenance-scheduled-canceled: "§7Plánovaná údržba byla §czrušena!"
 scheduler-broadcast-with-reason: "Maintenance starts in: %min% minutes. Reason: %reason%"
 scheduler-broadcast-without-reason: "Maintenance starts in: %min% minutes."
+
+
+invalid-number-format-scheduler: "§cČas musí být číslo (v minutách)."
+there-is-no-maintenance: "§7Žádná údržba není naplánovaná!"
+no-permission: "§cNa toto nemáš oprávnění."
 
 usage: "§7Použití: /maintenance <on|off|status|schedule|cancel>"
