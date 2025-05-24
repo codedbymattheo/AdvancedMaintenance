@@ -27,7 +27,7 @@ public class MaintenanceScheduler {
         plugin.getSqLiteLogger().logAction("SYSTEM", "SCHEDULED", "Maintenance in " + minutes + " min" + (reason != null ? " – " + reason : ""));
 
         if(reason != null){
-            broadcast(plugin.getConfigManager().getMessage("scheduler-broadcast-with-reason").replace("%min%", Integer.toString(minutes)).replace("%reason", reason));
+            broadcast(plugin.getConfigManager().getMessage("scheduler-broadcast-with-reason").replace("%min%", Integer.toString(minutes)).replace("%reason%", reason));
         }else{
             broadcast(plugin.getConfigManager().getMessage("scheduler-broadcast-without-reason").replace("%min%", Integer.toString(minutes)));
         }

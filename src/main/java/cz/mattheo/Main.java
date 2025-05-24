@@ -18,7 +18,7 @@ public final class Main extends JavaPlugin {
     @Getter
     private static Main instance;
 
-    private boolean maintenanceEnabled = getConfigManager().getConfig().getBoolean("maintenance");
+    private boolean maintenanceEnabled;
 
     private ConfigManager configManager;
     private SQLiteLogger sqLiteLogger;
@@ -35,6 +35,7 @@ public final class Main extends JavaPlugin {
 
         configManager = new ConfigManager();
         configManager.loadMessages();
+        maintenanceEnabled = getConfigManager().getConfig().getBoolean("maintenance");
 
         sqLiteLogger = new SQLiteLogger();
 
