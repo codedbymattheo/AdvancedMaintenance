@@ -11,8 +11,9 @@ SIMPLE BUT POWERFUL
   
 - Activation and deactivation of maintenance mode
 - 90% of customizable messages
-- Including discord webhooks, SQLite integration and JSON API
+- Including discord webhooks, SQLite integration
 - Schedule your Maintenances and let players know on Discord!
+- Built-in version checker, so you don't have to worry about checking it
 
 ---
 
