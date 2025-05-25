@@ -1,6 +1,7 @@
+#MAINTENANCE SWITCHER (false = MAINTENANCE IS OFF | true = MAINTENANCE IS ON)
 maintenance: false
 
 #DISCORD WEBHOOK
 discord:
-  enabled: true
+  enabled: false
   webhook-url: ""
