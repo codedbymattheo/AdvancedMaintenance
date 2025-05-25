@@ -2,7 +2,7 @@ package cz.mattheo.utils.version;
 
 import cz.mattheo.Main;
 import org.bukkit.Bukkit;
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.BufferedReader;
@@ -19,7 +19,7 @@ public class VersionChecker {
     public VersionChecker(){
         this.plugin = Main.getInstance();
         this.currentVersion = plugin.getDescription().getVersion();
-        this.gitHubURL= "https://api.github.com/repos/codedbymattheo/advancedmaintenance/releases/lates";
+        this.gitHubURL= "https://api.github.com/repos/codedbymattheo/advancedmaintenance/releases/latest";
     }
 
     public void checkForUpdates(){
