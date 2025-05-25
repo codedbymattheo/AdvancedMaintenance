@@ -35,4 +35,16 @@ public class ConfigManager {
         return plugin.getConfig();
     }
 
+    public void reload(){
+        plugin.reloadConfig();
+
+        File messagesFile = new File(plugin.getDataFolder(), "messages.yml");
+        if(messagesFile.exists()){
+            messages = YamlConfiguration.loadConfiguration(messagesFile);
+        }else{
+            plugin.saveResource("messages.yml", false);
+            messages = YamlConfiguration.loadConfiguration(messagesFile);
+        }
+    }
+
 }

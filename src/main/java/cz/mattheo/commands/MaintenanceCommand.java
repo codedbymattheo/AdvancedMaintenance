@@ -60,6 +60,11 @@ public class MaintenanceCommand extends Command {
                         plugin.getConfigManager().getMessage("maintenance-status-off"));
                 return;
 
+            case "reload":
+                plugin.getConfigManager().reload();
+                p.sendMessage("§aYou've successfully reloaded messages.yml and config.yml!");
+                return;
+
             case "schedule":
                 if(args.length < 2){
                     p.sendMessage(plugin.getConfigManager().getMessage("maintenance-usage"));
@@ -79,7 +84,6 @@ public class MaintenanceCommand extends Command {
             case "cancel":
                 if(plugin.getMaintenanceScheduler().isScheduled()){
                     plugin.getMaintenanceScheduler().cancel();
-                    p.sendMessage(plugin.getConfigManager().getMessage("maintenance-scheduled-canceled"));
                     plugin.getDiscordWebhook().sendEmbed("🔧 Maintenance", p, "Maintenance has been canceled!", 16755968);
 
                 }else{

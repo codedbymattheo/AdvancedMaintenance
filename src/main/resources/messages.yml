@@ -19,4 +19,4 @@ invalid-number-format-scheduler: "§cIncorrect time format. Must be a number (mi
 there-is-no-maintenance: "§7There is no planned maintenance"
 no-permission: "§cYou don't have permissions to do that!"
 
-usage: "§7Usage: /maintenance <on|off|status|schedule|cancel>"
+usage: "§7Usage: /maintenance <on|off|status|schedule|cancel|reload>"
