@@ -37,9 +37,9 @@ public class VersionChecker {
                 String latestVersion = (String) json.get("tag_name");
 
                 if(!currentVersion.equalsIgnoreCase(latestVersion)){
-                    Bukkit.getLogger().warning("There is a new version available: " + latestVersion + " you're using version (" + currentVersion + ")");
+                    Bukkit.getLogger().warning("[AdvancedMaintenance] There is a new version available: " + latestVersion + " you're using version (" + currentVersion + ")");
                 }else{
-                    Bukkit.getLogger().warning("You have latest version of this plugin! (" + currentVersion + ")");
+                    Bukkit.getLogger().warning("[AdvancedMaintenance] You have latest version of this plugin! (" + currentVersion + ")");
                 }
            }catch (Exception e){
                e.printStackTrace();
