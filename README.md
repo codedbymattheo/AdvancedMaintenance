@@ -33,7 +33,19 @@
 
 ---
 
+## ✉ Commands (If you want you are not supposed to provide reason)
+
+- /maintenance on <reason>(Enables maintenance)
+- /maintenance off <reason> (Disables maintenance)
+- /maintenance status (Tells you if maintenance is active or inactive)
+- /maintenance schedule <time> <reason> (Time must be in minutes, so for example just 60 or 20)
+- /maintenance cancel (It will cancel the schedule)
+- /maintenance reload (It reloads messages.yml and config.yml)
+
+---
+
 ## ❓ Comming Soon...
 
 - GUI management 
 - More permission separation
+- Tab complete
