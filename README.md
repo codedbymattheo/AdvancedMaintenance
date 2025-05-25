@@ -26,6 +26,14 @@
 
 ---
 
+## ✔ Permissions
+
+- maintenance.bypass = With this permission you can access server in maintenance.
+- maintenance.admin = With this permission you can execute every command.
+
+---
+
 ## ❓ Comming Soon...
 
 - GUI management 
+- More permission separation
