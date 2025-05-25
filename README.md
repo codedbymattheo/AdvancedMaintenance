@@ -1,6 +1,6 @@
 # 🛠️ AdvancedMaintenance
 
-[![License](https://img.shields.io/github/license/codedbymattheo/AdvancedMaintenance)](LICENSE) [![](https://jitpack.io/v/codedbymattheo/advancedmaintenance.svg)](https://jitpack.io/#codedbymattheo/advancedmaintenance)
+[![License](https://img.shields.io/github/license/codedbymattheo/AdvancedMaintenance)](LICENSE) [![](https://jitpack.io/v/codedbymattheo/advancedmaintenance.svg)](https://jitpack.io/#codedbymattheo/advancedmaintenance)[![](https://img.shields.io/github/downloads/codedbymattheo/AdvancedMaintenance/total)]
 
 **AdvancedMaintenance** is Spigot plugin, which allows you to lockdown server within maintenance. <br><br>
 
